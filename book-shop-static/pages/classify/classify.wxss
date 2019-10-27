@@ -1,0 +1,150 @@
+/* pages/classify/classify.wxss */
+.header{
+  display: flex;
+  flex-direction: column;
+  height: 210rpx;
+}
+.header .header-top{
+  padding: 20rpx;
+  display: flex;
+}
+.header .header-top image{
+  height: 100rpx;
+  width: 100rpx;
+}
+.header .top-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 30rpx;
+}
+.header .top-content .content1{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.header .top-content .content1 image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.header .top-content .content1 text:first-child{
+  font-weight: bold;
+  flex: 1;
+}
+.header .top-content .content2{
+  display: flex;
+  font-size: 27rpx;
+}
+.header .top-content .content2 view:first-child{
+  flex: 1;
+}
+.header .top-content .content2 view:last-child{
+  width: 140rpx;
+}
+.header .header-bottom{
+  display: flex;
+  height: 60rpx;
+  font-size: 27rpx;
+  padding: 0 20rpx;
+  box-shadow: 0rpx 2rpx 20rpx rgba(88, 88, 88, 0.2);
+}
+.header .header-bottom view:first-child{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-bottom view:last-child{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  display: flex;
+}
+.content .menu{
+  width: 200rpx;
+  background-color: lightgray;
+}
+.content .menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+}
+.content .shop-info{
+  width: 550rpx;
+  height: 1100rpx;
+}
+.classify-book .shop-item{
+  display: flex;
+  margin-bottom: 40rpx;
+}
+.classify-book .shop-item .img{
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classify-book .shop-item image{
+  width: 150rpx;
+  height: 170rpx;
+}
+.classify-book .shop-item .shop-details{
+  display: flex;
+  flex-direction: column;
+  width: 350rpx;
+}
+.classify-book .shop-item .shop-details .red-font{
+  display: flex;
+  font-size: 20rpx;
+  color: red;
+  margin: 10rpx 0;
+}
+.classify-book .shop-item .shop-details .red-font view{
+  border: 1rpx solid red;
+  border-radius: 7rpx;
+  margin-right: 20rpx;
+  padding: 0 10rpx;
+}
+.classify-book .shop-item .shop-details .price text:first-child{
+  color: red;
+  font-size: 25rpx;
+}
+.classify-book .shop-item .shop-details .price text:last-child{
+  text-decoration: line-through;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+.classify-book .shop-item .shop-details .intro{
+  font-size: 25rpx;
+  line-height: 40rpx;
+}
+.classify-book  .shop-details .shop-add .add-price{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.classify-book .shop-item .shop-details .shop-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.classify-book .shop-item .shop-details .add-icon image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.shop-info .categoty-title{
+  line-height: 40rpx;
+  padding: 20rpx;
+}
+
+page{
+  
+}
+
+
+

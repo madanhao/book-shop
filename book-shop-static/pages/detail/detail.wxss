@@ -1,0 +1,207 @@
+/* pages/detail/detail.wxss */
+.shop-pic{
+  height: 700rpx;
+  width: 100%;
+  background-color: white;
+}
+.shop-pic image{
+  height: 700rpx;
+}
+.limited{
+  display: flex;
+  color: white;
+  background-color: #C5A666;
+  padding: 10rpx 30rpx;
+}
+.limited>text{
+  flex: 1;
+  font-size: 50rpx;
+}
+.limited .limited-time{
+  display: flex;
+  flex-direction: column;
+  width: 300rpx;
+}
+.title{
+  display: flex;
+  height: 120rpx;
+  padding: 20rpx 30rpx;
+  padding-right: 0;
+  background-color: white;
+}
+.title>text{
+  font-size: 40rpx;
+  flex: 1;
+}
+.title .share{
+  display: flex;
+  flex-direction: column;
+  width: 100rpx;
+  align-items: center;
+}
+.title .share image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.price{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 30rpx;
+  padding-top: 0;
+  background-color: white;
+}
+.price .discount{
+  display: flex;
+  height: 70rpx;
+  align-items: center;
+}
+.price .discount text{
+  color: #C5A666;
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+.price .discount view{
+  color: #C5A666;
+  font-size: 25rpx;
+  border: 1rpx solid #C5A666;
+  border-radius: 10rpx;
+  width: 130rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price>text{
+  text-decoration: line-through;
+  color: gray;
+}
+.surplus{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 0 30rpx;
+  background-color: white;
+}
+.surplus text{
+  flex: 3;
+  color: gray;
+}
+.surplus text:first-child{
+  flex: 5;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx 0;
+  background-color: white;
+}
+.service .item{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 90rpx;
+}
+.service .item text:first-child{
+  flex: 1;
+}
+.service .item text:last-child{
+  width: 50rpx;
+}
+.noname-tab{
+  display: flex;
+  padding: 30rpx;
+  height: 70rpx;
+  background-color: white;
+  align-items: center;
+}
+.noname-tab view:first-child{
+  margin-right: 30rpx;
+}
+.evaluate{
+  display: flex;
+  height: 90rpx;
+  margin: 30rpx 0;
+  background-color: white;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.evaluate text:last-child{
+  width: 150rpx;
+  color: gray;
+}
+.evaluate text:first-child{
+  flex: 1;
+  font-size: 35rpx;
+}
+.shop-details{
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+  background-color: white;
+}
+.shop-details view:first-child{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid lightgray;
+  margin-bottom: 20rpx;
+}
+.shop-details text{
+  line-height: 50rpx;
+}
+
+
+
+
+
+.bottom-menu{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 100rpx;
+}
+.bottom-menu .icons{
+  display: flex;
+  flex: 1;
+  background-color: white;
+  font-size: 25rpx;
+}
+.bottom-menu .icons .item{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-menu .icons .item image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+.bottom-menu>view:nth-child(2){
+  width: 200rpx;
+  background-color: #F3ECE2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C5A666;
+}
+.bottom-menu>view:nth-child(3){
+  width: 200rpx;
+  background-color: #C5A666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.detail-page{
+  margin-bottom: 130rpx;
+}
+page{
+  background-color: #F8F8F8;
+}

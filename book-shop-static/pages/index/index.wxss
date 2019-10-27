@@ -1,0 +1,125 @@
+/**index.wxss**/
+.sliders{
+  height: 380rpx;
+}
+.sliders image{
+  height: 100%;
+  width: 100%;
+}
+.grids{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grids .item{
+  width: 187rpx;
+  height: 187rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grids .item image{
+  width: 70rpx;
+  height: 90rpx;
+}
+.grids .item text{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+.activity-view{
+  display: flex;
+  margin: 20rpx 0;
+}
+.activity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250rpx;
+}
+.activity .title{
+  font-weight: bold;
+}
+.activity .disc{
+  margin: 5rpx 0 ;
+  font-size: 25rpx;
+}
+.activity image{
+  margin-top: 10rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.recommend{
+  width: 100%;
+}
+.recommend image{
+  width: 100%;
+  height: 210rpx;
+}
+.recommend .limited-time{
+  width: 100%;
+  white-space: nowrap;
+}
+.limited-time .limited-item{
+  width: 250rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.limited-time .item-view{
+  display: inline-block;
+  width: 250rpx;
+}
+.limited-time .limited-item image{
+  width: 170rpx;
+  height: 200rpx;
+}
+.limited-time .old-price{
+  text-decoration: line-through;
+}
+.limited-time .title{
+  white-space: normal;
+  font-size: 25rpx;
+  padding: 0 20rpx;
+  height: 32rpx;
+  overflow: hidden;
+}
+.limited-time text{
+  font-size: 25rpx;
+}
+.limited-item text:first-of-type{
+  color: gold;
+}
+.recommend .new-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  height: 280rpx;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.recommend .new-item image{
+  width: 170rpx;
+  height: 200rpx;
+}
+.recommend .new-item view{
+  height: 32rpx;
+  overflow: hidden;
+  font-size: 25rpx;
+}
+.recommend .new-item text{
+  color: gold;
+  font-size: 25rpx;
+}
+.recommend .shops{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+

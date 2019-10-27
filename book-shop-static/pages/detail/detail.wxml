@@ -1,0 +1,107 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-page">
+  <!-- 商品图片 -->
+  <swiper autoplay interval="2000" class="shop-pic" circular>
+    <swiper-item>
+      <image  mode="aspectFit" src="/assets/shops/limited01.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image  mode="aspectFit" src="/assets/shops/limited03.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 限时折扣面板 -->
+  <view class="limited">
+    <text>限时折扣</text>
+    <view class="limited-time">
+      <text>距结束仅剩</text>
+      <text>2天17时14分17秒</text>
+    </view>
+  </view>
+  <!-- 书名 -->
+  <view class="title">
+    <text>程序员的三门课：技术精进、架构修炼、管理探秘</text>
+    <view class="share">
+      <image src="/assets/icons/share.png"></image>
+      <text>分享</text>
+    </view>
+  </view>
+  <!-- 价格面板 -->
+  <view class="price">
+    <view class="discount">
+      <text>￥54.91</text>
+      <view>限时8.8折</view>
+    </view>
+    <text>￥62.40</text>
+  </view>
+  <!-- 销量、剩余面板 -->
+  <view class="surplus">
+    <text>运费￥0.00~20.00</text>
+    <text>销量 6</text>
+    <text>剩余 199</text>
+  </view>
+  <!-- 配送、服务面板 -->
+  <view class="service">
+    <view class="item">
+      <text>配送：快递</text>
+      <text>></text>
+    </view>
+    <view class="item">
+      <text>服务  合作商直供</text>
+      <text>></text>
+    </view>
+  </view>
+  <!-- 企业认证面板 -->
+  <view class="noname-tab">
+    <view>
+      <icon type="success" size="17" color="gray"/>
+      <text>企业认证</text>
+    </view>
+    <view>
+      <icon type="success" size="17" color="gray"/>
+      <text>收货后结算</text>
+    </view>
+  </view>
+  <!-- 宝贝评价面板 -->
+  <view class="evaluate">
+    <text>宝贝评价</text>
+    <text>暂无评价</text>
+  </view>
+  <!-- 商品详情 -->
+  <view class="shop-details">
+    <view>商品详情</view>
+    <text>书名：程序员的三门课：技术精进、架构修炼、管理探秘</text>
+    <text>定价：79.0</text>
+    <text>ISBN：9787121373770</text>
+    <text>作者：于君泽等</text>
+    <text>版次：第一版</text>
+    <text>出版时间：2019-10</text>
+  </view>
+
+
+
+
+
+
+  <view class="bottom-menu">
+    <view class="icons">
+      <view class="item">
+        <image src="/assets/tabs/home.png"></image>
+        <text>首页</text>
+      </view>
+      <view class="item">
+        <image src="/assets/tabs/home.png"></image>
+        <text>客服</text>
+      </view>
+      <view class="item">
+        <image src="/assets/icons/cart.png"></image>
+        <text>购物车</text>
+      </view>
+    </view>
+    <view>加入购物车</view>
+    <view>立即购买</view>
+    
+  </view>
+
+</view>
+
+

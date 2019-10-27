@@ -1,0 +1,157 @@
+<!--index.wxml-->
+<view class="">
+  <!-- 轮播图 -->
+  <swiper class="sliders" indicator-dots autoplay interval="2000" circular>
+    <swiper-item>
+      <image src="/assets/images/pIndex01.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/pIndex02.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/pIndex03.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/pIndex04.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/assets/images/pIndex05.jpg"/>
+    </swiper-item>
+  </swiper>
+  <!-- 首页图标按钮 -->
+  <view class="grids">
+    <view class="item">
+      <image src="/assets/icons/dis-book.png"/>
+      <text>热卖图书</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-clothing.png"/>
+      <text>穿搭配饰</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-digital.png"/>
+      <text>数码科技</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-ebook.png"/>
+      <text>电子书</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-food.png"/>
+      <text>美味小食</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-life.png"/>
+      <text>生活用品</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-office.png"/>
+      <text>办公用品</text>
+    </view>
+    <view class="item">
+      <image src="/assets/icons/dis-vip.png"/>
+      <text>会员卡</text>
+    </view>
+  </view>
+  <!-- 活动图标 -->
+  <view class="activity-view">
+    <view class="activity">
+      <text class="title">热卖书籍</text>
+      <text class="disc">精选优质好书</text>
+      <image src="/assets/icons/i-book.png"/>
+    </view>
+    <view class="activity">
+      <text class="title">本周爆品</text>
+      <text class="disc">用心选择 好物推荐</text>
+      <image src="/assets/icons/i-fire2.png"/>
+    </view>
+    <view class="activity">
+      <text class="title">新品推荐</text>
+      <text class="disc">甄选更好的产品</text>
+      <image src="/assets/icons/i-new.png"/>
+    </view>
+  </view>
+  <!-- 推荐商品 -->
+  <view>
+    <!-- 限时折扣 -->
+    <view class="recommend">
+      <image src="/assets/images/rec-01.png"/>
+      <scroll-view class="limited-time" scroll-x="true">
+        <view class="item-view">
+          <view class="limited-item">
+            <image src="/assets/shops/limited01.jpg"></image>
+            <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+            <text>￥54.91</text>
+            <text class="old-price">￥62.40</text>
+          </view>
+        </view>
+        <view class="item-view">
+          <view class="limited-item">
+            <image src="/assets/shops/limited02.jpg"></image>
+            <view class="title">兰士顿E6U入耳式有线耳机</view>
+            <text>￥39.20</text>
+            <text class="old-price">￥49.00</text>
+          </view>
+        </view>
+        <view class="item-view">
+          <view class="limited-item">
+            <image src="/assets/shops/limited03.jpg"></image>
+            <view class="title">深度学习实战</view>
+            <text>￥61.09</text>
+            <text class="old-price">￥62.40</text>
+          </view>
+        </view>
+        <view class="item-view">
+          <view class="limited-item">
+            <image src="/assets/shops/limited04.jpg"></image>
+            <view class="title">5G NR标准：下一代无线通讯技术</view>
+            <text>￥79.30</text>
+            <text class="old-price">￥99.00</text>
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+    <!-- 新书速递 -->
+    <view class="recommend">
+      <image src="/assets/images/rec-02.png"/>
+      <view class="shops">
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+        <view class="new-item">
+          <image src="/assets/shops/limited01.jpg"></image>
+          <view class="title">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+          <text>￥54.91</text>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+
+
+
+</view>

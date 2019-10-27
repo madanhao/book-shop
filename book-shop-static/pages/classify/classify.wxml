@@ -1,0 +1,149 @@
+<!--分类页面-->
+
+<scroll-view scroll-y="true">
+  <!-- 头部卡片 -->
+  <view id="demo1" class="header">
+    <view class="header-top">
+      <image src="/assets/logo.png"></image>
+      <view class="top-content">
+        <view class="content1">
+          <text>码书商店</text>
+          <image src="/assets/search.png"></image>
+        </view>
+        <view class="content2">
+          <view>公告：欢迎来到码书商城</view>
+          <view>更多优惠 ></view>
+        </view>
+      </view>
+    </view>
+    <view class="header-bottom">
+      <view>我的记录</view>
+      <view>店铺首页</view>
+    </view>
+  </view>
+  <!-- 下方菜单和商品 -->
+  <view class="content">
+    <!-- 左侧菜单 -->
+    <view class="menu"> 
+      <view class="menu-item">优惠</view>
+      <view class="menu-item">Python</view>
+      <view class="menu-item">JAVA</view>
+      <view class="menu-item">人工智能</view>
+      <view class="menu-item">大数据</view>
+      <view class="menu-item">Android</view>
+      <view class="menu-item">编程</view>
+      <view class="menu-item">软件开发</view>
+      <view class="menu-item">产品运营</view>
+      <view class="menu-item">UI设计</view>
+      <view class="menu-item">人文心理</view>
+      <view class="menu-item">经济管理</view>
+      <view class="menu-item">科技</view>
+    </view>
+    <!-- 右侧商品信息 -->
+    <scroll-view scroll-y="true" class="shop-info">
+      <view class="classify-book">
+        <view class="categoty-title">优惠</view>
+        <view class="shop-item">
+          <view class="img">
+            <image src="/assets/shops/limited01.jpg"></image>
+          </view>
+          <view class="shop-details">
+            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+            <view class="shop-add">
+              <view class="add-price">
+                <view class="red-font">
+                  <view>8.8折</view>
+                  <view>限购2件</view>
+                </view>
+                <view class="price">
+                  <text>￥54.91</text>
+                  <text>62.40</text>
+                </view>
+              </view>
+              <view class="add-icon">
+                <image src="/assets/add.png"></image>
+              </view>
+            </view>
+           
+          </view>
+        </view>
+        <view class="shop-item">
+          <view class="img">
+            <image src="/assets/shops/limited01.jpg"></image>
+          </view>
+          <view class="shop-details">
+            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+            <view class="shop-add">
+              <view class="add-price">
+                <view class="red-font">
+                  <view>8.8折</view>
+                  <view>限购2件</view>
+                </view>
+                <view class="price">
+                  <text>￥54.91</text>
+                  <text>62.40</text>
+                </view>
+              </view>
+              <view class="add-icon">
+                <image src="/assets/add.png"></image>
+              </view>
+            </view>
+           
+          </view>
+        </view>
+        <view class="shop-item">
+          <view class="img">
+            <image src="/assets/shops/limited01.jpg"></image>
+          </view>
+          <view class="shop-details">
+            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+            <view class="shop-add">
+              <view class="add-price">
+                <view class="red-font">
+                  <view>8.8折</view>
+                  <view>限购2件</view>
+                </view>
+                <view class="price">
+                  <text>￥54.91</text>
+                  <text>62.40</text>
+                </view>
+              </view>
+              <view class="add-icon">
+                <image src="/assets/add.png"></image>
+              </view>
+            </view>
+           
+          </view>
+        </view>
+        <view class="shop-item">
+          <view class="img">
+            <image src="/assets/shops/limited01.jpg"></image>
+          </view>
+          <view class="shop-details">
+            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
+            <view class="shop-add">
+              <view class="add-price">
+                <view class="red-font">
+                  <view>8.8折</view>
+                  <view>限购2件</view>
+                </view>
+                <view class="price">
+                  <text>￥54.91</text>
+                  <text>62.40</text>
+                </view>
+              </view>
+              <view class="add-icon">
+                <image src="/assets/add.png"></image>
+              </view>
+            </view>
+           
+          </view>
+        </view>
+      </view>
+    
+    </scroll-view>
+  </view>
+
+
+</scroll-view>
+

@@ -1,0 +1,36 @@
+/* pages/cart/cart.wxss */
+.my-cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-cart text:first-child{
+  font-size: 40rpx;
+  color: #787878;
+  margin-top: 100rpx;
+}
+.my-cart text:nth-child(2){
+  color: gray;
+  margin: 40rpx 0 60rpx 0;
+}
+.my-cart view{
+  display: flex;
+  width: 220rpx;
+  height: 70rpx;
+  border: 2rpx solid #C5A666;
+  border-radius: 10rpx;
+  justify-content: center;
+  align-items: center;
+  color: #C5A666;
+}
+.my-cart text:last-child{
+  margin: 30rpx 0;
+}
+
+
+
+page{
+  background-color: #F8F8F8;
+}
+
