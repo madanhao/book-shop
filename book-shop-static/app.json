@@ -2,6 +2,14 @@
   "pages": [
     
     "pages/index/index",
+    "pages/secategory/book-list/book-list",
+    "pages/secategory/clothing-list/clothing-list",
+    "pages/secategory/digital-list/digital-list",
+    "pages/secategory/ebook-list/ebook-list",
+    "pages/secategory/food-list/food-list",
+    "pages/secategory/life-list/life-list",
+    "pages/secategory/office-list/office-list",
+    "pages/secategory/week-hot/week-hot",
     "pages/detail/detail",
     "pages/cart/cart",
     "pages/profile/profile",

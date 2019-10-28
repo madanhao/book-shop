@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "推荐书单",
+  "usingComponents": {
+    "shop-list": "/components/shop-list/shop-list"
+  }
+}

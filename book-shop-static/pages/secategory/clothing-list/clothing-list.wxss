@@ -1,0 +1,50 @@
+/* pages/secategory/clothing-list/clothing-list.wxss */
+page{
+  background-color: #F8F8F8;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+}
+.navbar view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.shop-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: white;
+}
+.shop-item>image{
+  height: 600rpx;
+  margin-top: 20rpx;
+}
+.shop-bottom{
+  display: flex;
+  align-items: baseline;
+  margin: 30rpx 100rpx;
+  width: 80%;
+  background-color: white;
+}
+.shop-bottom image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.shop-bottom text:first-child{
+  width: 150rpx;
+  color: #C5A666;
+  font-size: 40rpx;
+}
+.shop-bottom text:nth-child(2){
+  flex: 1;
+  color: gray;
+  font-size: 29rpx;
+}

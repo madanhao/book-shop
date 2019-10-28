@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "购物车",
   "usingComponents": {
-    "i-button": "../../dist/button/index"
   }
 }

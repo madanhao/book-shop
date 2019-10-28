@@ -1,0 +1,14 @@
+<!-- shop-list 自定义组件 -->
+<shop-list shop-list="{{bookList}}" />
+
+<!-- <view class="scroll-view">
+  <view wx:for="{{7}}" wx:key="{{index}}" class="shop-item">
+    <image src="{{bookList[0].imgUrl}}" mode="aspectFit"></image>
+    <view>{{bookList[0].bookName}}</view>
+    <view class="price">
+      <text>￥{{bookList[0].price}}</text>
+      <image src="/assets/icons/cart.png"></image>
+    </view>
+  </view>
+</view> -->
+

@@ -25,120 +25,39 @@
   <view class="content">
     <!-- 左侧菜单 -->
     <view class="menu"> 
-      <view class="menu-item">优惠</view>
-      <view class="menu-item">Python</view>
-      <view class="menu-item">JAVA</view>
-      <view class="menu-item">人工智能</view>
-      <view class="menu-item">大数据</view>
-      <view class="menu-item">Android</view>
-      <view class="menu-item">编程</view>
-      <view class="menu-item">软件开发</view>
-      <view class="menu-item">产品运营</view>
-      <view class="menu-item">UI设计</view>
-      <view class="menu-item">人文心理</view>
-      <view class="menu-item">经济管理</view>
-      <view class="menu-item">科技</view>
+      <view bindtap="selectedMenu" style="background-color:{{index===currIndex?'white':'#F8F8F8'}}" data-currindex="{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="menu-item">
+        {{item.name}}
+      </view>
     </view>
     <!-- 右侧商品信息 -->
-    <scroll-view scroll-y="true" class="shop-info">
-      <view class="classify-book">
-        <view class="categoty-title">优惠</view>
-        <view class="shop-item">
-          <view class="img">
-            <image src="/assets/shops/limited01.jpg"></image>
-          </view>
-          <view class="shop-details">
-            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
-            <view class="shop-add">
-              <view class="add-price">
-                <view class="red-font">
-                  <view>8.8折</view>
-                  <view>限购2件</view>
+    <scroll-view scroll-into-view="ID{{currIndex}}" scroll-y="true" class="shop-info" scroll-with-animation>
+      <view id="ID{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="classify-book">
+        <block wx:if="{{item.shops!=null && item.shops.length>0}}">
+          <view class="categoty-title">{{item.name}}</view>
+          <view wx:for="{{item.shops}}" wx:for-item="shop" wx:for-index="sIndex" wx:key="{{sIndex}}" class="shop-item">
+            <view class="img">
+              <image src="{{shop.imgUrl}}"></image>
+            </view>
+            <view class="shop-details">
+              <view class="intro">{{shop.bookName}}</view>
+              <view class="shop-add">
+                <view class="add-price">
+                  <view wx:if="{{shop.discount && shop.limited}}" class="red-font">
+                    <view>{{shop.discount}}折</view>
+                    <view>限购{{shop.limited}}件</view>
+                  </view>
+                  <view class="price">
+                    <text style="color: red; font-size: 25rpx;">￥{{shop.price}}</text>
+                    <text wx:if="{{shop.oldPrice}}" style="text-decoration:line-through;font-size:20rpx;margin-left: 10rpx;">{{shop.oldPrice}}</text>
+                  </view>
                 </view>
-                <view class="price">
-                  <text>￥54.91</text>
-                  <text>62.40</text>
+                <view class="add-icon">
+                  <image src="/assets/add.png"></image>
                 </view>
-              </view>
-              <view class="add-icon">
-                <image src="/assets/add.png"></image>
               </view>
             </view>
-           
           </view>
-        </view>
-        <view class="shop-item">
-          <view class="img">
-            <image src="/assets/shops/limited01.jpg"></image>
-          </view>
-          <view class="shop-details">
-            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
-            <view class="shop-add">
-              <view class="add-price">
-                <view class="red-font">
-                  <view>8.8折</view>
-                  <view>限购2件</view>
-                </view>
-                <view class="price">
-                  <text>￥54.91</text>
-                  <text>62.40</text>
-                </view>
-              </view>
-              <view class="add-icon">
-                <image src="/assets/add.png"></image>
-              </view>
-            </view>
-           
-          </view>
-        </view>
-        <view class="shop-item">
-          <view class="img">
-            <image src="/assets/shops/limited01.jpg"></image>
-          </view>
-          <view class="shop-details">
-            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
-            <view class="shop-add">
-              <view class="add-price">
-                <view class="red-font">
-                  <view>8.8折</view>
-                  <view>限购2件</view>
-                </view>
-                <view class="price">
-                  <text>￥54.91</text>
-                  <text>62.40</text>
-                </view>
-              </view>
-              <view class="add-icon">
-                <image src="/assets/add.png"></image>
-              </view>
-            </view>
-           
-          </view>
-        </view>
-        <view class="shop-item">
-          <view class="img">
-            <image src="/assets/shops/limited01.jpg"></image>
-          </view>
-          <view class="shop-details">
-            <view class="intro">程序员的三门课：技术精进、架构修炼、管理探秘</view>
-            <view class="shop-add">
-              <view class="add-price">
-                <view class="red-font">
-                  <view>8.8折</view>
-                  <view>限购2件</view>
-                </view>
-                <view class="price">
-                  <text>￥54.91</text>
-                  <text>62.40</text>
-                </view>
-              </view>
-              <view class="add-icon">
-                <image src="/assets/add.png"></image>
-              </view>
-            </view>
-           
-          </view>
-        </view>
+        </block>
       </view>
     
     </scroll-view>

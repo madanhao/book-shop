@@ -1,0 +1,8 @@
+
+<!-- 搜索框 -->
+<view class="search-view">
+  <image src="/assets/search.png"></image>
+  <input bindconfirm="search" confirm-type="search" placeholder="请输入商品名称"/>
+</view>
+
+<shop-list shop-list="{{shopList}}" />

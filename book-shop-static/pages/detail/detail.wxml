@@ -6,7 +6,7 @@
       <image  mode="aspectFit" src="/assets/shops/limited01.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image  mode="aspectFit" src="/assets/shops/limited03.jpg"></image>
+      <image  mode="aspectFit" src="/assets/shops/limited04.jpg"></image>
     </swiper-item>
   </swiper>
   <!-- 限时折扣面板 -->
@@ -85,11 +85,11 @@
   <view class="bottom-menu">
     <view class="icons">
       <view class="item">
-        <image src="/assets/tabs/home.png"></image>
+        <image src="/assets/icons/home.png"></image>
         <text>首页</text>
       </view>
       <view class="item">
-        <image src="/assets/tabs/home.png"></image>
+        <image src="/assets/icons/service.png"></image>
         <text>客服</text>
       </view>
       <view class="item">

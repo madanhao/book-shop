@@ -1,0 +1,18 @@
+
+.search-view{
+  height: 80rpx;
+  margin: 10rpx 30rpx;
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.search-view image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx;
+}
+.search-view input{
+  height: 80rpx;
+  flex: 1;
+  
+}

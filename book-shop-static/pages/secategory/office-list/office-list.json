@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "办公用品",
+  "usingComponents": {
+    "shop-list": "/components/shop-list/shop-list"
+  }
+}

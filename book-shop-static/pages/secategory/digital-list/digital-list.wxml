@@ -1,0 +1,2 @@
+<!--pages/secategory/digital-list/digital-list.wxml-->
+<shop-list shop-list="{{shopList}}" />

@@ -1,0 +1,21 @@
+<!-- 自定义组件 shop-list -->
+<shop-list>
+  <view class="navbar">
+    <view bindtap="_findBySyn" style="{{currIndex===0?'color: #C5A666':''}}">综合</view>
+    <view bindtap="_findByCount" style="{{currIndex===1?'color: #C5A666':''}}">销量</view>
+    <view bindtap="_findByPrice" style="{{currIndex===2?'color: #C5A666':''}}">价格</view>
+    <view bindtap="_findByNewest" style="{{currIndex===3?'color: #C5A666':''}}">上新</view>
+  </view>
+  <view class="scroll-view">
+    <view wx:for="{{shopList}}" wx:key="{{index}}" class="shop-item">
+      <image src="{{item.imgUrl}}" mode="aspectFit"></image>
+      <view>{{item.name}}</view>
+      <view class="price">
+        <text>￥{{item.price}}</text>
+        <image src="/assets/icons/cart.png"></image>
+      </view>
+    </view>
+  </view>
+</shop-list>
+
+
