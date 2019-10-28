@@ -85,7 +85,8 @@ Page({
       ] },
     ],
     currIndex: 0, // 当前选中的菜单索引
-    // currViewId: 'ID0' // 当前视图的id
+    scrollIndex: 0,
+    heightArr: [], // 右边商品每个分类的view的高度
   },
   // 选中菜单按钮事件
   selectedMenu(e){
@@ -94,6 +95,33 @@ Page({
     this.setData({
       currIndex: index
     });
+  },
+  // 右侧商品滚动事件
+  scrollHandle(e){
+    let scrollIndex = this.computedScroll(e.detail.scrollTop);
+    this.setData({ scrollIndex: scrollIndex });
+  },
+  // 计算右侧视图位置
+  computedScroll(scrollTop){
+    let scrollArr = this.data.heightArr;
+    let result = -1;
+    for (let i in scrollArr) {
+      if(scrollTop>0 && scrollTop<scrollArr[0]){ // 如果滚动高度小于第一个view，则返回0
+        result = 0;
+      }
+      if(scrollTop > scrollArr[scrollArr.length-1]){ // 如果滚动高度大于总高度，就返回最大的索引
+        result = scrollArr.length - 1;
+      }
+      let x = Number.parseInt(i) + 1;
+      if (scrollTop > scrollArr[i] && scrollTop < scrollArr[x]) { // 如果高度介于i和i+1之间，返回i+1
+        result = x;
+      }
+    }
+    if(result === -1){ // 其他高度情况均视为0
+      return 0;
+    }else{
+      return result;
+    }
   },
 
   /**
@@ -106,8 +134,18 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
+  onReady() {
+    let h = 0;
+    let heightArr = [];
+    const query = wx.createSelectorQuery();
+    query.selectAll('.classify-book').boundingClientRect();
+    query.exec(res => {
+      res[0].forEach(item => {
+        h += item.height;
+        heightArr.push(h);
+      });
+      this.setData({ heightArr: heightArr });
+    });
   },
 
   /**

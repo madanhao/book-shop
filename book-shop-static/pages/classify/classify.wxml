@@ -25,12 +25,12 @@
   <view class="content">
     <!-- 左侧菜单 -->
     <view class="menu"> 
-      <view bindtap="selectedMenu" style="background-color:{{index===currIndex?'white':'#F8F8F8'}}" data-currindex="{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="menu-item">
+      <view bindtap="selectedMenu" style="background-color:{{index===scrollIndex?'white':'#F8F8F8'}}" data-currindex="{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="menu-item">
         {{item.name}}
       </view>
     </view>
     <!-- 右侧商品信息 -->
-    <scroll-view scroll-into-view="ID{{currIndex}}" scroll-y="true" class="shop-info" scroll-with-animation>
+    <scroll-view scroll-into-view="ID{{currIndex}}" bindscroll="scrollHandle" scroll-y="true" class="shop-info" scroll-with-animation>
       <view id="ID{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="classify-book">
         <block wx:if="{{item.shops!=null && item.shops.length>0}}">
           <view class="categoty-title">{{item.name}}</view>
