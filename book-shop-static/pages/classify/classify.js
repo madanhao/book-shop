@@ -9,7 +9,7 @@ Page({
   data: {
     menu:[ // 菜单
       {name:'优惠', shops:[
-        { id:'a01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40, scount: 2},
+        { id:'a01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40 },
         { id: 'a02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', discount: 8.8, limited: 2, price: 79.30, oldPrice: 99.00 },
         { id: 'a03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40 }
       ]},
