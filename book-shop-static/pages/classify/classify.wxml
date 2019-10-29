@@ -17,8 +17,8 @@
       </view>
     </view>
     <view class="header-bottom">
-      <view>我的记录</view>
-      <view>店铺首页</view>
+      <view bindtap="toProfilePage">我的记录</view>
+      <view bindtap="toIndexPage">店铺首页</view>
     </view>
   </view>
   <!-- 下方菜单和商品 -->
@@ -51,9 +51,11 @@
                     <text wx:if="{{shop.oldPrice}}" style="text-decoration:line-through;font-size:20rpx;margin-left: 10rpx;">{{shop.oldPrice}}</text>
                   </view>
                 </view>
-                <view class="add-icon">
-                  <image src="/assets/add.png"></image>
-                </view>
+              </view>
+              <view class="add-icon">
+                <view><image bindtap="delShop" data-menuindex="{{index}}" data-shopindex="{{sIndex}}" wx:if="{{shop.scount>0}}" src="/assets/reduce.png"></image></view>
+                <view><text wx:if="{{shop.scount>0}}">{{shop.scount}}</text></view>
+                <image bindtap="addShop" data-menuindex="{{index}}" data-shopindex="{{sIndex}}" src="/assets/add.png"></image>
               </view>
             </view>
           </view>

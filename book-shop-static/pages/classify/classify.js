@@ -1,87 +1,89 @@
-// pages/classify/classify.js
-Page({
 
+// 调用全局唯一app实例，获取 globalData
+let globalData = getApp().globalData;
+
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     menu:[ // 菜单
       {name:'优惠', shops:[
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', discount: 8.8, limited: 2, price: 79.30, oldPrice: 99.00 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40 }
+        { id:'a01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40, scount: 2},
+        { id: 'a02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', discount: 8.8, limited: 2, price: 79.30, oldPrice: 99.00 },
+        { id: 'a03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', discount: 8.8, limited: 2, price: 54.91, oldPrice: 62.40 }
       ]},
       { name: 'Python', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg',price: 54.91 },
+        { id: 'b01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'b02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'b03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg',price: 54.91 },
         { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: 'JAVA', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'c01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'c02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'c03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
         { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '人工智能', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'd01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'd02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'd03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
         { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '大数据', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'e01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'e02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'e03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'e04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: 'Android', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'f01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'f02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'f03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'f04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '编程', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'g01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'g02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'g03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'g04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '软件开发', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'h01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'h02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'h03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'h04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '产品运营', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'i01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'i02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'i03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'i04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: 'UI设计', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'j01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'j02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'j03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'j04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '人文心理', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'k01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'k02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'k03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'k04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '经济管理', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'l01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'l02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'l03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'l04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
       { name: '科技', shops: [
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
-        { bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
-        { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
+        { id: 'm01', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'm02', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 },
+        { id: 'm03', bookName: '程序员的三门课：技术精进、架构修炼、管理探秘', imgUrl: '/assets/shops/limited01.jpg', price: 54.91 },
+        { id: 'm04', bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
       ] },
     ],
     currIndex: 0, // 当前选中的菜单索引
@@ -122,6 +124,79 @@ Page({
     }else{
       return result;
     }
+  },
+  // 跳转到profile页面（我的）
+  toProfilePage(){
+    wx.switchTab({
+      url: '/pages/profile/profile',
+    })
+  },
+  // 跳转到首页
+  toIndexPage(){
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },
+  // 点击红色添加按钮，添加商品到购物车
+  addShop(e){
+    let dSet = e.currentTarget.dataset;
+    let currShop = this.data.menu[dSet.menuindex].shops[dSet.shopindex];
+    if(!currShop.scount || currShop.scount < 1){
+      currShop.scount = 1;
+    }else{
+      currShop.scount++;
+    }
+    this.setData({ menu: this.data.menu });
+    // 校验购物车中是否有这件商品
+    this.checkAddCartItem(currShop);
+  },
+  // 点击减号减少一件商品
+  delShop(e){
+    let dSet = e.currentTarget.dataset;
+    let currShop = this.data.menu[dSet.menuindex].shops[dSet.shopindex];
+    if (currShop.scount && currShop.scount > 0) {
+      currShop.scount--;
+    }
+    this.setData({ menu: this.data.menu });
+    // 购物车的该商品数量减一
+    this.checkDelCartItem(currShop);
+    console.log(globalData.cart)
+  },
+  // 校验购物车中是否已有currShop，有返回true，并且currShop在购物车中的count加一；
+  // 没有返回false,并且把这件商品放到购物车中，count为1
+  checkAddCartItem(currShop){
+    // cartItem为对象{count:'商品数量', shop: '商品对象'}
+    if (globalData.cart && globalData.cart.length > 0) {
+      for (let cartItem of globalData.cart) {
+        // 如果购物车中已经有这件商品，则count加一
+        if (cartItem.shop.id === currShop.id) {
+          cartItem.count++;
+          return true;
+        }
+      }
+      globalData.cart.push({ count: 1, shop: currShop });
+      return false;
+    }else{
+      globalData.cart = [];
+      globalData.cart.push({ count: 1, shop: currShop });
+      return false;
+    }
+  },
+  // 校验购物车中是否已有currShop，有返回true，并且currShop在购物车中的count减一，没有返回false
+  checkDelCartItem(currShop) {
+    if (globalData.cart && globalData.cart.length > 0) {
+      for (let index in globalData.cart) {
+        // 如果购物车中已经有这件商品，则count减一
+        if (globalData.cart[index].shop.id === currShop.id && globalData.cart[index].count > 0) {
+          if (--globalData.cart[index].count < 1) {
+            globalData.cart.splice(index, 1);
+          }
+          return true;
+        }
+      }
+      return false;
+    }
+    return false;
   },
 
   /**

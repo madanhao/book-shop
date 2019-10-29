@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/classify/classify",
     "pages/index/index",
     "pages/secategory/book-list/book-list",
     "pages/secategory/clothing-list/clothing-list",
@@ -13,7 +13,7 @@
     "pages/detail/detail",
     "pages/cart/cart",
     "pages/profile/profile",
-    "pages/classify/classify",
+    
     
 
     "pages/logs/logs"

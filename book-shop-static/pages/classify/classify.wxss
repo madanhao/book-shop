@@ -96,6 +96,8 @@
   display: flex;
   flex-direction: column;
   width: 350rpx;
+  position: relative;
+  
 }
 .classify-book .shop-item .shop-details .red-font{
   display: flex;
@@ -123,10 +125,29 @@
   align-items: center;
   justify-content: center;
 }
+.classify-book .shop-item .shop-details .add-icon{
+  width: 120rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.classify-book .shop-item .shop-details .add-icon view:first-of-type{
+  width: 40rpx;
+  height: 40rpx;
+}
+.classify-book .shop-item .shop-details .add-icon view:last-of-type{
+  flex: 1;
+}
 .classify-book .shop-item .shop-details .add-icon image{
   width: 40rpx;
   height: 40rpx;
-  margin-right: 30rpx;
+}
+.classify-book .shop-item .shop-details .add-icon text{
+  flex: 1;
 }
 .shop-info .categoty-title{
   line-height: 40rpx;
