@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/classify/classify",
+    "pages/score-rule/score-rule",
+    "pages/profile/profile",
+    "pages/integral/integral",
+    
     "pages/index/index",
     "pages/secategory/book-list/book-list",
     "pages/secategory/clothing-list/clothing-list",
@@ -12,10 +15,9 @@
     "pages/secategory/week-hot/week-hot",
     "pages/detail/detail",
     "pages/cart/cart",
-    "pages/profile/profile",
     
+    "pages/classify/classify",
     
-
     "pages/logs/logs"
   ],
   "window": {

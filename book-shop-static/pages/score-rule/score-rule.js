@@ -1,4 +1,4 @@
-// pages/profile/profile.js
+// pages/score-rule/score-rule.js
 Page({
 
   /**
@@ -6,13 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  // 跳转到积分中心页面
-  toIntegral(){
-    wx.navigateTo({
-      url: '/pages/integral/integral'
-    })
   },
 
   /**

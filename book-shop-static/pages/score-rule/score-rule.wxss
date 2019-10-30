@@ -1,0 +1,63 @@
+
+.header{
+  background-color: gray;
+  height: 150rpx;
+  color: white;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score-item {
+  background-color: white;
+  border-radius: 30rpx;
+  margin-top: -30rpx;
+  padding-top: 40rpx;
+}
+.score-item .pay-font{
+  color: white;
+  background-color: gray;
+  width: 350rpx;
+  height: 80rpx;
+  font-size: 38rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+.score-item .exchange{
+  color: gray;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  margin-left: 50rpx;
+ }
+.score-item .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.score-item .cards .card-item{
+  display: flex;
+  height: 150rpx;
+  width: 100%;
+}
+.score-item .cards .card-item image{
+  width: 100rpx;
+  height: 80rpx;
+  margin-left: 80rpx;
+}
+.score-item .cards .card-item .card-tips{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  flex:1;
+ }
+.score-item .cards .card-item .card-tips text:last-child{
+  color: gray;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+ }

@@ -1,0 +1,33 @@
+
+<view>
+  <view class="header">积分规则</view>
+  <view class="score-item">
+    <view class="pay-font">积分该怎么花？</view>
+    <view class="exchange">| 使用积分兑换商品</view>
+    <view class="cards">
+      <view class="card-item">
+        <image src="/assets/icons/task.png"></image>
+        <view class="card-tips">
+          <text>兑换优惠券/码</text>
+          <text>兑换成功后，可以在个人中心查看</text>
+        </view>
+      </view>
+      <view class="card-item">
+        <image src="/assets/icons/task.png"></image>
+        <view class="card-tips">
+          <text>兑换权益卡</text>
+          <text>兑换成功后，可以在个人中心查看</text>
+        </view>
+      </view>
+      <view class="card-item">
+        <image src="/assets/icons/task.png"></image>
+        <view class="card-tips">
+          <text>兑换商品</text>
+          <text>兑换成功后，可以在我的订单查看发货进度</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+
+</view>

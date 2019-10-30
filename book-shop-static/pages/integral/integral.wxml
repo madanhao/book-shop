@@ -1,0 +1,47 @@
+
+<!-- 积分中心页面 -->
+<view>
+  <!-- 上方提示登录按钮 -->
+  <view class="loginbtn">
+    <text>积分未同步？登录试试</text>
+    <view>登录</view>
+  </view>
+  <!-- 积分面板 -->
+  <view class="integral-panel" >
+    <text>0 积 分 ></text>
+    <view>积分规则</view>
+  </view>
+  <!-- 领积分面板 -->
+  <view class="collar-score">
+    <view class="collar-panel">
+      <text>领积分</text>
+      <text>积分兑商品，好物随心换</text>
+    </view>
+    <view class="collar-font">领积分</view>
+    <!-- 签到、消费面板 -->
+    <view class="collar-item">
+      <view class="icon">
+        <image src="/assets/icons/task.png"></image>
+      </view>
+      <view class="signin">
+        <text>签到</text>
+        <text>连续签到7天可获得5积分</text>
+      </view>
+      <view class="singn-btn">去签到</view>
+    </view>
+    <view class="collar-item">
+      <view class="icon">
+        <image src="/assets/icons/cart.png"></image>
+      </view>
+      <view class="signin">
+        <text>消费</text>
+        <text>消费50.00元可获得5积分</text>
+      </view>
+      <view bindtap="toIndexPage" class="singn-btn">去下单</view>
+    </view>
+
+  </view>
+
+
+
+</view>

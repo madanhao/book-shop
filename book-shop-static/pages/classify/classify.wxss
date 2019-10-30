@@ -43,7 +43,7 @@
 }
 .header .header-bottom{
   display: flex;
-  height: 60rpx;
+  height: 80rpx;
   font-size: 27rpx;
   padding: 0 20rpx;
   box-shadow: 0rpx 2rpx 20rpx rgba(88, 88, 88, 0.2);
@@ -114,6 +114,7 @@
 .classify-book .shop-item .shop-details .intro{
   font-size: 25rpx;
   line-height: 40rpx;
+  padding-right: 20rpx;
 }
 .classify-book  .shop-details .shop-add .add-price{
   display: flex;

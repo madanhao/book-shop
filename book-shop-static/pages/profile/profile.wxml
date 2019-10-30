@@ -19,7 +19,7 @@
   </view>
   <!-- 积分、卡、劵码部分 -->
   <view class="integral">
-    <view class="item01">
+    <view bindtap="toIntegral" class="item01">
       <text>0</text>
       <text>积分</text>
     </view>

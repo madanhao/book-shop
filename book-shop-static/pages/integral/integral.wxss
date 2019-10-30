@@ -1,0 +1,116 @@
+/* pages/integral/integral.wxss */
+
+.loginbtn{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 100rpx;
+}
+.loginbtn view{
+  background-color: #FB4949;
+  width: 130rpx;
+  height: 50rpx;
+  border-radius: 45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginbtn text{
+  flex: 1;
+}
+.integral-panel{
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+  padding-left: 30rpx;
+  background-color: lightgray;
+}
+.integral-panel text{
+  flex: 1;
+  font-size: 50rpx;
+}
+.integral-panel view{
+  width: 170rpx;
+  height: 50rpx;
+  border-top-left-radius: 25rpx;
+  border-bottom-left-radius: 25rpx;
+  background-color: rgba(00, 00, 00, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80rpx;
+  color: white;
+}
+.collar-score{
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding: 30rpx;
+  border-radius: 30rpx;
+  background-color: white;
+  margin-top: -20rpx;
+}
+.collar-score .collar-panel{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 200rpx;
+  width: 400rpx;
+  background-color: #3C96EE;
+  padding: 40rpx;
+  border-radius: 10rpx;
+}
+.collar-score .collar-panel text:first-child{
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+.collar-score .collar-font{
+  height: 140rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+ .collar-score .collar-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 100rpx;
+ }
+ .collar-score .collar-item .icon{
+   background-color: lightblue;
+   height: 100rpx;
+   width: 100rpx;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .collar-score .collar-item .icon image{
+   height: 50rpx;
+   width: 50rpx;
+ }
+ .collar-score .collar-item .signin{
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   padding-left: 30rpx;
+ }
+  .collar-score .collar-item .signin text:first-child{
+   font-size: 38rpx;
+   margin-bottom: 15rpx;
+ }
+ .collar-score .collar-item .singn-btn{
+   width: 150rpx;
+   height: 60rpx;
+   border: 2rpx solid #3C96EE;
+   border-radius: 40rpx;
+   color: #3C96EE;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+

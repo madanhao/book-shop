@@ -1,4 +1,4 @@
-// pages/profile/profile.js
+// pages/integral/integral.js
 Page({
 
   /**
@@ -7,11 +7,10 @@ Page({
   data: {
 
   },
-
-  // 跳转到积分中心页面
-  toIntegral(){
-    wx.navigateTo({
-      url: '/pages/integral/integral'
+  // 跳转到首页
+  toIndexPage(){
+    wx.switchTab({
+      url: '/pages/index/index'
     })
   },
 
