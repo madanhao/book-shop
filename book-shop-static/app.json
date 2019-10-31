@@ -1,10 +1,13 @@
 {
   "pages": [
-    "pages/score-rule/score-rule",
+    "pages/cart/cart",
+    "pages/index/index",
     "pages/profile/profile",
+    "pages/order-list/order-list",
+    "pages/score-rule/score-rule",
+    
     "pages/integral/integral",
     
-    "pages/index/index",
     "pages/secategory/book-list/book-list",
     "pages/secategory/clothing-list/clothing-list",
     "pages/secategory/digital-list/digital-list",
@@ -14,7 +17,7 @@
     "pages/secategory/office-list/office-list",
     "pages/secategory/week-hot/week-hot",
     "pages/detail/detail",
-    "pages/cart/cart",
+    
     
     "pages/classify/classify",
     

@@ -36,22 +36,22 @@
   <view class="order">
     <view class="title">
       <text>我的订单</text>
-      <text>查看全部订单 ></text>
+      <text bindtap="showAllOrder">查看全部订单 ></text>
     </view>
     <view class="content">
-      <view>
+      <view bindtap="toPayPage">
         <image src="/assets/icons/pay.png"></image>
         <text>待付款</text>
       </view>
-      <view>
+      <view bindtap="toSendPage">
         <image src="/assets/icons/send.png"></image>
         <text>待发货</text>
       </view>
-      <view>
+      <view bindtap="toReceivePage">
         <image src="/assets/icons/receive.png"></image>
         <text>待收货</text>
       </view>
-      <view>
+      <view bindtap="toEvaluatePage">
         <image src="/assets/icons/evaluate.png"></image>
         <text>待评价</text>
       </view>
@@ -68,7 +68,7 @@
       <view>任务中心</view>
       <text>></text>
     </view>
-    <view class="item">
+    <view bindtap="toCartPage" class="item">
       <image src="/assets/icons/cart.png"></image>
       <view>购物车</view>
       <text>></text>

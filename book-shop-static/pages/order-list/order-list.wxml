@@ -1,0 +1,21 @@
+<!-- 订单列表页面 -->
+<view>
+  <view class="sign-card">
+    <text>找不到订单？绑定手机号试试</text>
+    <view>登录</view>
+  </view>
+  <!-- 标签页 -->
+  <i-tabs current="{{ current }}" bindchange="handleChange" color="#C5A666">
+    <i-tab key="tab1" title="全部"></i-tab>
+    <i-tab key="tab2" title="待付款"></i-tab>
+    <i-tab key="tab3" title="待发货"></i-tab>
+    <i-tab key="tab4" title="已发货"></i-tab>
+    <i-tab key="tab5" title="待评价"></i-tab>
+  </i-tabs>
+
+  
+  
+  
+
+
+</view>

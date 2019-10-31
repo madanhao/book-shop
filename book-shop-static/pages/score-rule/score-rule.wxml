@@ -28,6 +28,50 @@
       </view>
     </view>
   </view>
-  
+  <view class="score-item">
+    <view class="pay-font">该怎么赚积分？</view>
+    <view class="exchange">| 消费</view>
+    <view class="ways">
+      <view>以下可获得积分的规则可以叠加</view>
+      <view>所有商品消费50.00元可获得5积分</view>
+    </view>
+    <view class="exchange">| 签到</view>
+    <view class="ways02">
+      <view>每连续签到7天可获得5积分</view>
+    </view>
+  </view>
+  <view class="score-item" style="margin-top:0;">
+    <view class="pay-font">常见问题</view>
+    <view class="question">
+      <view>1.积分状态</view>
+      <view class="ques-item">积分分为收入、支出、冻结3个状态</view>
+      <view class="ques-item">收入：指的是通过所有渠道获取的积分</view>
+      <view class="ques-item">支出：指的是消耗的积分</view>
+      <view class="ques-item">冻结：指的是处于保护期的积分</view>
+    </view>
+    <view class="question">
+      <view>2.积分有效期</view>
+      <view class="ques-item">当前获得的积分为永久有效</view>
+    </view>
+    <view class="question">
+      <view>3.优先使用即将过期的积分</view>
+    </view>
+    <view class="question">
+      <view>4.积分扣减规则</view>
+      <view class="ques-item">通过下单获得的积分，在订单退款时，会相应扣减积分</view>
+    </view>
+    <view class="question">
+      <view>5.积分退回规则</view>
+      <view class="ques-item">下单时使用积分抵现，在整笔订单退款时，则会退回所有未失效的积分</view>
+      <view class="ques-item">在积分商城使用积分兑换，订单退款时，不会退回积分</view>
+    </view>
+    <view class="bottom-tip"> * 详情可咨询客服</view>
 
+  </view>
+
+  <view class="logo">
+    <image src="/assets/logo.png"></image>
+    <text>保护伞公司提供技术支持</text>
+  </view>
+  
 </view>

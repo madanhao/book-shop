@@ -1,6 +1,6 @@
 
 .header{
-  background-color: gray;
+  background-color: #3F4457;
   height: 150rpx;
   color: white;
   font-size: 40rpx;
@@ -16,9 +16,9 @@
 }
 .score-item .pay-font{
   color: white;
-  background-color: gray;
+  background-color: #3F4457;
   width: 350rpx;
-  height: 80rpx;
+  height: 70rpx;
   font-size: 38rpx;
   display: flex;
   justify-content: center;
@@ -27,12 +27,13 @@
   border-bottom-right-radius: 40rpx;
 }
 .score-item .exchange{
-  color: gray;
+  color: #3F4457;
   height: 150rpx;
   display: flex;
   align-items: center;
-  font-size: 40rpx;
+  font-size: 37rpx;
   margin-left: 50rpx;
+  font-weight: bold;
  }
 .score-item .cards{
   display: flex;
@@ -61,3 +62,55 @@
   font-size: 26rpx;
   margin-top: 10rpx;
  }
+ .score-item .ways view:first-child{
+   line-height: 100rpx;
+   margin-left: 50rpx;
+ }
+.score-item .ways view:last-child{
+  line-height: 140rpx;
+  margin: 0 50rpx;
+  background-color: #F5F8FF;
+  padding-left: 50rpx;
+}
+.score-item .ways02 view{
+  line-height: 140rpx;
+  margin: 0 50rpx;
+  background-color: #F5F8FF;
+  padding-left: 50rpx;
+}
+.score-item .question view:first-of-type{
+  color: #3F4457;
+  font-size: 37rpx;
+  margin-left: 50rpx;
+  line-height: 100rpx;
+  font-weight: bold;
+}
+.score-item .ques-item{
+  line-height: 60rpx;
+  margin-left: 100rpx;
+  padding-right: 30rpx;
+}
+.score-item .bottom-tip{
+  line-height: 100rpx;
+  margin-left: 100rpx;
+  color: gray;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #F8F8F8;
+}
+.logo image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.logo text{
+  font-size: 29rpx;
+  color: lightgray;
+  margin-bottom: 30rpx;
+}

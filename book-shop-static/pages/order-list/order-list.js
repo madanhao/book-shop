@@ -1,29 +1,25 @@
-// pages/cart/cart.js
+// pages/order-list/order-list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    shopList: [
-      {id: 'a01', name: '儿童编程————懂编程的孩子更聪明', price: 90.00, count: 1, imgUrl: '/assets/shops/limited01.jpg' },
-      { id: 'a02', name: 'NEXSTAND笔记本支架 升降折叠', price: 77.00, count: 1, desc: '睿智黑', imgUrl: '/assets/shops/limited04.jpg' },
-      { id: 'a03', name: '猿衣酷系列————小黄鸭Hello World CODE 情侣卫衣', price: 199.00, count: 1, desc: 'HelloWorld灰色，L', imgUrl: '/assets/shops/clothing-pic01.png' },
-      { id: 'a04', name: 'CSDN 20周年专属定制限量款T_shirt 四十八小时内发货', price: 99.00, count: 1, desc: '1024， 白， L', imgUrl: '/assets/shops/clothing-pic02.png' }
-    ]
+    current: 'tab1', // 当前标签页的key
   },
-  // 跳转到首页
-  toIndexPage(){
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
+  handleChange({ detail }) {
+    this.setData({
+      current: detail.key
+    });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(options.current){
+      this.setData({ current: options.current });
+    }
   },
 
   /**

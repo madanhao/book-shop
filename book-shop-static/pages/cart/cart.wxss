@@ -27,7 +27,89 @@
 .my-cart text:last-child{
   margin: 30rpx 0;
 }
-
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0;
+  background-color: white;
+}
+.cart-item .cart-icon{
+  margin: 0 25rpx;
+ }
+.cart-item image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.cart-item .item-desc{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 20rpx;
+}
+.cart-item .item-desc view:first-child{
+  font-size: 28rpx;
+}
+.cart-item .item-desc text:first-of-type{
+  font-size: 25rpx;
+  color: gray;
+  margin: 10rpx 0;
+}
+.cart-item .item-desc .price{
+  display: flex;
+  height: 60rpx;
+}
+.cart-item .item-desc .price text:last-child{
+  width: 50rpx;
+}
+.cart-item .item-desc .price text:first-child{
+  flex: 1;
+  font-size: 34rpx;
+  color: #C5A666;
+}
+.pay{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  height: 130rpx;
+}
+.pay .selectall{
+  width: 150rpx;
+  margin-left: 30rpx;
+  line-height: 50rpx;
+}
+.pay .sum{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 30rpx;
+  justify-content: right;
+}
+.pay .sum text:last-child{
+  font-size: 28rpx;
+}
+.pay .sum .sum-font text:first-child{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.pay .sum .sum-font text:last-child{
+  color: #C5A666;
+  font-size: 28rpx;
+}
+.pay .sum .sum-font{
+  margin-bottom: 10rpx;
+}
+.pay .paybtn{
+  width: 220rpx;
+  line-height: 130rpx;
+  background-color: #C5A666;
+  color: white;
+  text-align: center;
+}
 
 
 page{
