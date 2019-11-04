@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "新增地址",
   "usingComponents": {
     "i-action-sheet": "../../dist/action-sheet/index"
   }

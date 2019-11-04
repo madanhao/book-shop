@@ -10,31 +10,37 @@
 <view wx:if="{{shopList && shopList.length>0}}">
   <!-- 购物车中的商品 -->
   <view wx:for="{{shopList}}" wx:key="{{index}}" class="cart-item">
-    <icon type="success" size="20" color="#C5A666" class="cart-icon"/>
+    <icon wx:if="{{item.selected}}" bindtap="unselectedOne" data-shopindex="{{index}}" type="success" size="20" color="#C5A666" class="cart-icon"/>
+    <view wx:if="{{!item.selected}}" bindtap="selectedOne" data-shopindex="{{index}}" class="unselected"></view>
     <image mode="aspectFit" src="{{item.imgUrl}}"></image>
     <view class="item-desc">
       <view>{{item.name}}</view>
       <text>{{item.desc}}</text>
       <view class="price">
         <text>￥{{item.price}}</text>
-        <text>×{{item.count}}</text>
+        <view class="shop-count">
+          <view bindtap="reduceOne" style="background-color: {{item.count>1?'#F4F5F7':'#F5F9FC'}}" data-shopindex="{{index}}" class="left">-</view>
+          <view class="center">{{item.count}}</view>
+          <view bindtap="addOne" data-shopindex="{{index}}" class="right">+</view>
+        </view>
       </view>
     </view>
   </view> 
   <!-- 底部结算面板 -->
   <view class="pay">
     <view class="selectall">
-      <icon type="success" size="20" color="#C5A666" style="margin-right: 10rpx;"/>
+      <icon wx:if="{{selectAll}}" bindtap="unselectAll" type="success" size="20" color="#C5A666" style="margin-right: 10rpx;height:20px;"/>
+      <view wx:if="{{!selectAll}}" bindtap="selectAll" class="bottom-icon"></view>
       <text>全选</text>
-    </view> 
+    </view>
     <view class="sum">
       <view class="sum-font">
         <text>合计：</text>
-        <text>￥467.00</text>
+        <text>￥{{totalPrice}}</text>
       </view>
       <text>不含运费</text>
     </view> 
-    <view class="paybtn">结算(4)</view>
+    <view class="paybtn">结算({{selectedCount}})</view>
   </view>
 
 </view>

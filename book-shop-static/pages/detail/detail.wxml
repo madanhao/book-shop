@@ -77,11 +77,6 @@
     <text>出版时间：2019-10</text>
   </view>
 
-
-
-
-
-
   <view class="bottom-menu">
     <view class="icons">
       <view class="item">
@@ -97,10 +92,98 @@
         <text>购物车</text>
       </view>
     </view>
-    <view>加入购物车</view>
-    <view>立即购买</view>
-    
+    <view bindtap="joinCart">加入购物车</view>
+    <view bindtap="buyNow">立即购买</view>
   </view>
+
+  <!-- 加入购物车，下方弹出框 -->
+  <i-action-sheet visible="{{ visible }}" i-class="action" bind:cancel="closeComp">
+    <view slot="header">
+      <view class="header">
+        <image src="{{shopDetail.imgUrl}}"></image>
+        <view class="shop-detail">
+          <view class="name">
+            <text>{{shopDetail.name}}</text>
+            <image bindtap="closeComp" src="/assets/cancel.png"></image>
+          </view>
+          <text class="price">￥{{shopDetail.price}}</text>
+        </view>
+      </view>
+      <!-- 版本 -->
+      <view wx:if="{{shopDetail.version && shopDetail.version.length>0}}" class="option">
+        <text>版本：</text>
+        <view class="item">
+          <view wx:for="{{shopDetail.version}}" bindtap="versionClick" data-vindex="{{index}}" style="{{version==item?'color: white; background-color: #C5A666':''}}" wx:key="{{index}}" >{{item}}</view>
+        </view>
+      </view>
+      <!-- 尺寸 -->
+      <view wx:if="{{shopDetail.size && shopDetail.size.length>0}}" class="option">
+        <text>尺寸：</text>
+        <view class="item">
+          <view wx:for="{{shopDetail.size}}" bindtap="sizeClick" data-vindex="{{index}}" style="{{size==item?'color: white; background-color: #C5A666':''}}" wx:key="{{index}}">{{item}}</view>
+        </view>
+      </view>
+      <view class="select-count">
+        <view class="count">
+          <view>购买数量：</view>
+          <view class="shop-count">
+            <view bindtap="reduceOne" style="background-color: {{shopDetail.count>1?'#F4F5F7':'#F5F9FC'}}"  class="left">-</view>
+            <view class="center">{{shopDetail.count}}</view>
+            <view bindtap="addOne" class="right">+</view>
+          </view>
+        </view>
+        <text>剩余{{shopDetail.surplus}}件</text>
+      </view>
+      <!-- 加入购物车、立即购买按钮 -->
+      <view class="add-cart">
+        <view bindtap="addToCart">加入购物车</view>
+      </view>
+    </view>
+  </i-action-sheet>
+  <!-- 加入购物车，下方弹出框 -->
+  <i-action-sheet visible="{{ visible02 }}" i-class="action" bind:cancel="closeComp">
+    <view slot="header">
+      <view class="header">
+        <image src="{{shopDetail.imgUrl}}"></image>
+        <view class="shop-detail">
+          <view class="name">
+            <text>{{shopDetail.name}}</text>
+            <image bindtap="closeComp" src="/assets/cancel.png"></image>
+          </view>
+          <text class="price">￥{{shopDetail.price}}</text>
+        </view> 
+      </view>
+      <!-- 版本 -->
+      <view wx:if="{{shopDetail.version && shopDetail.version.length>0}}" class="option">
+        <text>版本：</text>
+        <view class="item">
+          <view wx:for="{{shopDetail.version}}" bindtap="versionClick" data-vindex="{{index}}" style="{{version==item?'color: white; background-color: #C5A666':''}}" wx:key="{{index}}" >{{item}}</view>
+        </view>
+      </view>
+      <!-- 尺寸 -->
+      <view wx:if="{{shopDetail.size && shopDetail.size.length>0}}" class="option">
+        <text>尺寸：</text>
+        <view class="item">
+          <view wx:for="{{shopDetail.size}}" bindtap="sizeClick" data-vindex="{{index}}" style="{{size==item?'color: white; background-color: #C5A666':''}}" wx:key="{{index}}">{{item}}</view>
+        </view>
+      </view>
+      <view class="select-count">
+        <view class="count">
+          <view>购买数量：</view>
+          <view class="shop-count">
+            <view bindtap="reduceOne" style="background-color: {{shopDetail.count>1?'#F4F5F7':'#F5F9FC'}}"  class="left">-</view>
+            <view class="center">{{shopDetail.count}}</view>
+            <view bindtap="addOne" class="right">+</view>
+          </view>
+        </view>
+        <text>剩余{{shopDetail.surplus}}件</text>
+      </view>
+      <!-- 下一步按钮 -->
+      <view class="add-cart">
+        <view bindtap="buyNowNext">下一步</view>
+      </view>
+    </view>
+  </i-action-sheet>
 
 </view>
 

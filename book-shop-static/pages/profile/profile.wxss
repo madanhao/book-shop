@@ -1,5 +1,7 @@
 /* pages/profile/profile.wxss */
-
+page{
+  background-color: #F8F8F8;
+}
 .header{
   width: 100%;
   height: 320rpx;
@@ -167,8 +169,6 @@
 
 
 
-page{
-  background-color: #F8F8F8;
-}
+
 
 

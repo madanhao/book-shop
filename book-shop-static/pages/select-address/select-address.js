@@ -1,11 +1,22 @@
-// page/order-list/order-list.js
+// pages/select-address/select-address.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    addresses: [ // 收货地址集合
+      { id: 'a01', name: '尼古拉斯凯奇', phone: '14589898989', address: '北京市西城区南宁路567弄6号楼601室', selected: false },
+      { id: 'a02', name: '呵呵哒', phone: '14589898989', address: '上海市松江区新桥镇雅鹿苑49号楼1604', selected: true }
+    ]
+  },
+  // 修改某个地址
+  editAddress(e){
+    let addrindex = e.currentTarget.dataset.addrindex;
+    let id = this.data.addresses[addrindex].id;
+    wx.navigateTo({
+      url: '/pages/add-address/add-address?id='+id
+    })
   },
 
   /**

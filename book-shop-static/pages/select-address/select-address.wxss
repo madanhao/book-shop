@@ -1,0 +1,41 @@
+
+page{
+  background-color: #F8F8F8;
+}
+.addr-item{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 150rpx;
+  background-color: white;
+  margin-top: 20rpx;
+}
+.addr-item icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.addr-item .person-info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: left;
+  align-items: flex-start;
+  padding-left: 30rpx;
+}
+.addr-item .person-info text:last-child{
+  color: gray;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.addr-item image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.addr-item .unselected{
+  height: 40rpx;
+  width: 40rpx;
+  border: 1rpx solid #C5A666;
+  border-radius: 50%;
+}
+

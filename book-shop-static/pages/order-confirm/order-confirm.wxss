@@ -1,0 +1,137 @@
+page{
+  background-color: #F8F8F8;
+}
+.body{
+  margin-bottom: 130rpx;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(white,white) padding-box,repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0/100rpx 100rpx;
+}
+.header image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.header text:first-of-type{
+  flex: 1;
+}
+.header text:last-of-type{
+  width: 40rpx;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  background-color: white;
+  height: 100rpx;
+  margin: 20rpx 0;
+}
+.logo image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 30rpx;
+}
+.logo text{
+  flex: 1;
+}
+.orders{
+  display: flex;
+  flex-direction: column;
+}
+.orders .order-item{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.orders .order-item image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx 20rpx;
+}
+.orders .order-item .details{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.orders .order-item .details>text:first-child{
+  font-size: 28rpx;
+}
+.orders .order-item .details>text:nth-child(2){
+  color: gray;
+  font-size: 27rpx;
+  margin: 6rpx 0;
+}
+.orders .order-item .details .price{
+  display: flex;
+  align-items: center;
+}
+.orders .order-item .details .price text:first-child{
+  flex: 1;
+  color: #C5A666;
+  font-size: 27rpx;
+}
+.orders .order-item .details .price text:last-child{
+  width: 40rpx;
+  margin-right: 30rpx;
+}
+.discount{
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 20rpx;
+}
+.discount text:first-child{
+  width: 200rpx;
+}
+.discount text:last-child{
+  flex: 1;
+  text-align: end;
+}
+.leave-msg{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-top: 1rpx solid lightgray;
+  padding: 0 30rpx;
+  background-color: white;
+}
+.leave-msg text{
+  width: 150rpx;
+  margin-right: 10rpx;
+}
+.leave-msg input{
+  flex: 1;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.submit .price{
+  display: flex;
+  flex: 1;
+  background-color: white;
+  height: 100%;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.submit .price text:last-child{
+  color: #C5A666;
+}
+.submit .submit-btn{
+  background-color: #C5A666;
+  color: white;
+  width: 200rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+

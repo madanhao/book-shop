@@ -59,14 +59,36 @@
   display: flex;
   height: 60rpx;
 }
-.cart-item .item-desc .price text:last-child{
-  width: 50rpx;
-}
 .cart-item .item-desc .price text:first-child{
-  flex: 1;
-  font-size: 34rpx;
   color: #C5A666;
+  font-size: 35rpx;
+  flex: 1;
 }
+.cart-item .item-desc .price .shop-count{
+  display: flex;
+  font-size: 40rpx;
+  width: 200rpx;
+  text-align: center;
+}
+.cart-item .item-desc .price .shop-count .left{
+  width: 60rpx;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  font-size: 40rpx;
+  height: 60rpx;
+}
+.cart-item .item-desc .price .shop-count .center{
+  width: 70rpx;
+  background-color: #F4F5F7;
+  margin: 0 6rpx;
+}
+.cart-item .item-desc .price .shop-count .right{
+  width: 60rpx;
+  background-color: #F4F5F7;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
 .pay{
   display: flex;
   align-items: center;
@@ -79,7 +101,7 @@
 .pay .selectall{
   width: 150rpx;
   margin-left: 30rpx;
-  line-height: 50rpx;
+  height: 50rpx;
 }
 .pay .sum{
   flex: 1;
@@ -110,6 +132,24 @@
   color: white;
   text-align: center;
 }
+.cart-item .unselected{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C5A666;
+  box-sizing: border-box;
+  margin: 0 25rpx;
+}
+.pay .bottom-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #C5A666;
+  box-sizing: border-box;
+  margin-right: 10rpx;
+  display: inline-block;
+}
+
 
 
 page{

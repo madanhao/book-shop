@@ -1,0 +1,49 @@
+
+<view class="body">
+  <view bindtap="selectAddress" class="header">
+    <image src="/assets/add-blue.png"></image>
+    <text>选择收货地址</text>
+    <text>></text>
+  </view>
+  <!-- logo -->
+  <view class="logo">
+    <image src="/assets/logo.png"></image>
+    <text>码书商店</text>
+  </view>
+  <view class="orders">
+    <view wx:for="{{orderList}}" wx:key="{{index}}" class="order-item">
+      <image mode="aspectFit" src="{{item.imgUrl}}"></image>
+      <view class="details">
+        <text>{{item.name}}</text>
+        <text>{{item.desc}}</text>
+        <view class="price">
+          <text>￥{{item.price}}</text>
+          <text>×{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 优惠面板 -->
+  <view class="discount">
+    <text>优惠</text>
+    <text>暂无可用 ></text>
+  </view>
+  <!-- 配送方式、买家留言面板 -->
+  <view class="discount">
+    <text>配送方式</text>
+    <text>快递 ></text>
+  </view>
+  <view class="leave-msg">
+    <text>买家留言</text>
+    <input maxlength="50" placeholder="留言建议提前协商(50字以内)"></input>
+  </view>
+</view>
+
+<!-- 提交订单按钮 -->
+<view class="submit">
+  <view class="price">
+    <text>合计：</text>
+    <text>￥296.00</text>
+  </view>
+  <view class="submit-btn">提交订单</view>
+</view> 

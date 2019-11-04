@@ -1,0 +1,54 @@
+
+page{
+  background-color: #F8F8F8;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30rpx;
+  font-size: 27rpx;
+  background-color: white;
+  margin: 20rpx 0;
+}
+.address .item{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1rpx solid lightgray;
+  width: 100%;
+}
+.address .item>view:last-child{
+  border-bottom: none;
+}
+.address .item text{
+  width: 200rpx;
+}
+.address .item input{
+  flex: 1;
+}
+.save-btn{
+  background-color: #C5A666;
+  height: 100rpx;
+  margin: 50rpx 30rpx;
+  border-radius: 10rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+}
+.header-btn{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  color: #1296DB;
+}
+.header-btn view:first-child{
+  text-align: left;
+  flex: 1;
+}
+.header-btn view:last-child{
+  width: 100rpx;
+}
+
