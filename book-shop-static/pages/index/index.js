@@ -22,6 +22,15 @@ Page({
       { bookName: '5G NR标准：下一代无线通讯技术', imgUrl: '/assets/shops/limited04.jpg', price: 79.30 }
     ]
   },
+  // 搜索按钮
+  searchShops(e){
+    let shopname = e.detail.value;
+    if (shopname){
+      wx.navigateTo({
+        url: '/pages/secategory/search-list/search-list',
+      })
+    }
+  },
   
   onLoad: function () {
     

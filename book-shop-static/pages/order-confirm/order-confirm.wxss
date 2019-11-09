@@ -114,6 +114,7 @@ page{
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 9999;
 }
 .submit .price{
   display: flex;
@@ -132,6 +133,45 @@ page{
   width: 200rpx;
   line-height: 100rpx;
   text-align: center;
+}
+.header-addr{
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(white,white) padding-box,repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0/100rpx 100rpx;
+}
+.header-addr .pos-img{
+  margin-top: -22rpx;
+  margin-right: 20rpx;
+}
+.header-addr .address{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.header-addr text:last-child{
+  width: 40rpx;
+}
+.header-addr .address .addr-top{
+  display: flex;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.header-addr .address .addr-top text:first-of-type{
+  flex: 1;
+}
+.header-addr .address .addr-top text:last-of-type{
+  width: 230rpx;
+}
+.header-addr image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.header-addr .address view:last-child{
+  font-size: 27rpx;
+  color: gray;
+  margin-top: 20rpx;
 }
 
 

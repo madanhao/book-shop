@@ -1,0 +1,12 @@
+<!-- 搜索框 -->
+<view class="search-panel">
+  <image src="/assets/search.png"></image>
+  <input bindconfirm="searchShops" placeholder="搜索商品" confirm-type="search"></input>
+</view>
+<!-- 商品列表 -->
+<shop-list wx:if="{{ bookList && bookList.length>0 }}" shop-list="{{bookList}}" />
+<!-- 没有相关商品提示框 -->
+<view wx:if="{{searchResult}}" class="search-tip">
+  没有搜索到相关商品
+</view>
+

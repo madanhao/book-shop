@@ -10,12 +10,25 @@ Page({
       { id: 'a02', name: '儿童编程————懂编程的孩子更聪明', price: 90.00, count: 1, imgUrl: '/assets/shops/limited01.jpg',  },
       { id: 'a03', name: 'NEXSTAND笔记本支架 升降折叠', price: 77.00, count: 1, desc: '睿智黑', imgUrl: '/assets/shops/limited04.jpg' },
       { id: 'a04', name: 'CSDN 20周年专属定制限量款T_shirt 四十八小时内发货', price: 99.00, count: 1, desc: '1024， 白， L', imgUrl: '/assets/shops/clothing-pic02.png' }
-    ]
+    ],
+    address: {}
   },
-  // 选择收货地址
-  selectAddress(){
+  // 添加收货地址
+  addAddress(){
     wx.navigateTo({
       url: '/pages/add-address/add-address'
+    })
+  },
+  // 选择收货地址
+  selectAddress() {
+    wx.navigateTo({
+      url: '/pages/select-address/select-address'
+    })
+  },
+  // 跳转到选择优惠页面
+  toSelectDiscount(){
+    wx.navigateTo({
+      url: '/pages/select-discount/select-discount'
     })
   },
 

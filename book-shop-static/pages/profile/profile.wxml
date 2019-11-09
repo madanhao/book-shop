@@ -86,7 +86,7 @@
   </view>
   <!-- 下部卡片二（收货地址、个人信息、账号设置） -->
   <view class="bottom-card">
-    <view class="item">
+    <view bindtap="toAddressPage" class="item">
       <image src="/assets/icons/address.png"></image>
       <view>收货地址</view>
       <text>></text>

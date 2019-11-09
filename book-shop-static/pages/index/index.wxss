@@ -1,4 +1,7 @@
 /**index.wxss**/
+page{
+  background-color: #F8F8F8;
+}
 .sliders{
   height: 380rpx;
 }
@@ -121,5 +124,20 @@
   display: flex;
   flex-wrap: wrap;
 }
-
+.search-panel{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  margin: 20rpx 30rpx;
+  background-color: white;
+  border-radius: 40rpx;
+}
+.search-panel image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx;
+}
+.search-panel input{
+  flex: 1;
+}
 

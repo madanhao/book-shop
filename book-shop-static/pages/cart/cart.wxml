@@ -40,7 +40,7 @@
       </view>
       <text>不含运费</text>
     </view> 
-    <view class="paybtn">结算({{selectedCount}})</view>
+    <view bindtap="settlement" class="paybtn">结算({{selectedCount}})</view>
   </view>
 
 </view>

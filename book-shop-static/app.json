@@ -1,11 +1,15 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/order-confirm/order-confirm",
+    
+    "pages/total-classify/total-classify",
+    "pages/select-discount/select-discount",
     "pages/edit-address/edit-address",
     "pages/select-address/select-address",
     "pages/add-address/add-address",
-    "pages/order-confirm/order-confirm",
+    
     "pages/detail/detail",
-    "pages/index/index",
     "pages/cart/cart",
     "pages/profile/profile",
     "pages/order-list/order-list",
@@ -13,6 +17,7 @@
     "pages/integral/integral",
     "pages/secategory/book-list/book-list",
     "pages/secategory/clothing-list/clothing-list",
+    "pages/secategory/search-list/search-list",
     "pages/secategory/digital-list/digital-list",
     "pages/secategory/ebook-list/ebook-list",
     "pages/secategory/food-list/food-list",

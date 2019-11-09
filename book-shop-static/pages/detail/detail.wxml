@@ -79,7 +79,7 @@
 
   <view class="bottom-menu">
     <view class="icons">
-      <view class="item">
+      <view bindtap="toIndexPage" class="item">
         <image src="/assets/icons/home.png"></image>
         <text>首页</text>
       </view>
@@ -87,7 +87,7 @@
         <image src="/assets/icons/service.png"></image>
         <text>客服</text>
       </view>
-      <view class="item">
+      <view bindtap="toCartPage" class="item">
         <image src="/assets/icons/cart.png"></image>
         <text>购物车</text>
       </view>

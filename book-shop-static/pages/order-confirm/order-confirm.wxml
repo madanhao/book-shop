@@ -1,8 +1,21 @@
 
 <view class="body">
-  <view bindtap="selectAddress" class="header">
+  <!-- 选择收货地址（没有历史收货地址） -->
+  <view wx:if="{{!address}}" bindtap="addAddress" class="header">
     <image src="/assets/add-blue.png"></image>
     <text>选择收货地址</text>
+    <text>></text>
+  </view>
+  <!-- 收货地址（已有收货地址） -->
+  <view wx:if="{{address}}" bindtap="selectAddress" class="header-addr">
+    <view class="pos-img"><image src="/assets/position.png"></image></view>
+    <view class="address">
+      <view class="addr-top">
+        <text>收货人：尼古拉斯凯奇</text>
+        <text>13589898989</text>
+      </view>
+      <view>收货地址：上海市徐汇区天华科技园8号楼</view>
+    </view>
     <text>></text>
   </view>
   <!-- logo -->
@@ -26,12 +39,12 @@
   <!-- 优惠面板 -->
   <view class="discount">
     <text>优惠</text>
-    <text>暂无可用 ></text>
+    <text bindtap="toSelectDiscount">暂无可用 ></text>
   </view>
   <!-- 配送方式、买家留言面板 -->
   <view class="discount">
     <text>配送方式</text>
-    <text>快递 ></text>
+    <text>快递免运费</text>
   </view>
   <view class="leave-msg">
     <text>买家留言</text>

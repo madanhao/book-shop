@@ -120,7 +120,9 @@ Page({
       let shopDetail = this.data.shopDetail;
       shopDetail.version = this.data.version;
       shopDetail.size = this.data.size;
-      
+      wx.navigateTo({
+        url: '/pages/order-confirm/order-confirm'
+      });
     } else if (!this.data.version) {
       wx.showToast({
         title: '请选择版本',
@@ -133,7 +135,18 @@ Page({
       });
     }
   },
-
+  // 跳转到首页
+  toIndexPage(){
+    wx.switchTab({
+      url: '/pages/index/index'
+    });
+  },
+  // 跳转到购物车页面
+  toCartPage(){
+    wx.switchTab({
+      url: '/pages/cart/cart'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

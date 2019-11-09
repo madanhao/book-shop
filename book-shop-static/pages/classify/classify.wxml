@@ -8,7 +8,7 @@
       <view class="top-content">
         <view class="content1">
           <text>码书商店</text>
-          <image src="/assets/search.png"></image>
+          <image bindtap="toSearchPage" src="/assets/search.png"></image>
         </view>
         <view class="content2">
           <view>公告：欢迎来到码书商城</view>
@@ -27,6 +27,7 @@
     <view class="menu"> 
       <view bindtap="selectedMenu" style="background-color:{{index===scrollIndex?'white':'#F8F8F8'}}" data-currindex="{{index}}" wx:for="{{menu}}" wx:key="{{index}}" class="menu-item">
         {{item.name}}
+        <view wx:if="{{item.selected && item.selected>0}}" class="menu-count">{{item.selected}}</view>
       </view>
     </view>
     <!-- 右侧商品信息 -->

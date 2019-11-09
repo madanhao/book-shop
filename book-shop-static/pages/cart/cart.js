@@ -1,6 +1,5 @@
 // pages/cart/cart.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -105,6 +104,12 @@ Page({
       let selectedCount = ++this.data.selectedCount;
       this.setData({ totalPrice: totalPrice, selectedCount: selectedCount });
     }
+  },
+  //结算按钮
+  settlement(){
+    wx.navigateTo({
+      url: '/pages/order-confirm/order-confirm',
+    })
   },
 
   /**

@@ -49,6 +49,12 @@ Page({
       url: '/pages/cart/cart'
     })
   }, 
+  // 跳转到收货地址页面
+  toAddressPage(){
+    wx.navigateTo({
+      url: '/pages/select-address/select-address'
+    })
+  },
 
 
 

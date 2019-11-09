@@ -1,0 +1,14 @@
+
+<!-- 选择优惠页面 -->
+<view>
+  <view class="sign-card">
+    <input placeholder="请输入优惠码"></input>
+    <view>兑换</view>
+  </view>
+  <!-- 标签页 -->
+  <i-tabs current="{{ current }}" bindchange="handleChange" color="#C5A666">
+    <i-tab key="tab1" title="可使用优惠券 (0)"></i-tab>
+    <i-tab key="tab2" title="不可使用优惠券 (0)"></i-tab>
+  </i-tabs>
+
+</view>

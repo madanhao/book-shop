@@ -1,5 +1,9 @@
 <!--index.wxml-->
 <view class="">
+  <view class="search-panel">
+    <image src="/assets/search.png"></image>
+    <input bindconfirm="searchShops" placeholder="Python" confirm-type="search"></input>
+  </view>
   <!-- 轮播图 -->
   <swiper class="sliders" indicator-dots autoplay interval="2000" circular>
     <swiper-item wx:for="{{swiperImg}}" wx:key="{{index}}">

@@ -1,11 +1,19 @@
 
-<view wx:for="{{addresses}}" wx:key="{{index}}" class="addr-item">
-  <icon wx:if="{{item.selected}}" type="success" color="#C5A666"></icon>
-  <view wx:if="{{!item.selected}}" class="unselected"></view>
-  <view class="person-info">
-    <text>{{item.name}}，{{item.phone}}</text>
-    <text>收货地址：{{item.address}}</text>
-  </view>
-  <image bindtap="editAddress" data-addrindex="{{index}}" src="/assets/icons/signin-black.png"></image>
-</view> 
+<scroll-view scroll-y >
+  <view bindtap="selectedAddr" data-sindex="{{index}}" wx:for="{{addresses}}" wx:key="{{index}}" class="addr-item">
+    <icon wx:if="{{item.selected}}" type="success" color="#C5A666"></icon>
+    <view wx:if="{{!item.selected}}" class="unselected"></view>
+    <view class="person-info">
+      <text>{{item.name}}，{{item.phone}}</text>
+      <text>收货地址：{{item.address}}</text>
+    </view>
+    <image bindtap="editAddress" data-addrindex="{{index}}" src="/assets/icons/signin-black.png"></image>
+  </view> 
+</scroll-view>
+
+
+<!-- 新增收货地址按钮 -->
+<view class="add-btn">
+  新增收货地址
+</view>
 

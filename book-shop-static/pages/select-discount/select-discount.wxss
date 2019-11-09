@@ -1,0 +1,22 @@
+
+.sign-card{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  background-color: white;
+  padding: 0 30rpx;
+  font-size: 29rpx;
+  border-bottom: 1rpx solid lightgray;
+}
+.sign-card view{
+  background-color: #C5A666;
+  width: 120rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.sign-card input{
+  flex: 1;
+}

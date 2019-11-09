@@ -2,6 +2,9 @@
 page{
   background-color: #F8F8F8;
 }
+scroll-view{
+  margin-bottom: 120rpx;
+}
 .addr-item{
   display: flex;
   align-items: center;
@@ -38,4 +41,13 @@ page{
   border: 1rpx solid #C5A666;
   border-radius: 50%;
 }
-
+.add-btn{
+  height: 100rpx;
+  width: 100%;
+  background-color: #C5A666;
+  color: white;
+  text-align: center;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}

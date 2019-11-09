@@ -90,7 +90,9 @@ Page({
       return;
     }
     console.log(this.data.addrForm)
-
+    wx.navigateTo({
+      url: '/pages/order-confirm/order-confirm'
+    })
   },
   // 姓名、电话、地区、详细地址双向绑定事件
   nameInput(e) {

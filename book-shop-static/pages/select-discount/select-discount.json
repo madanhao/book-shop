@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "选择优惠",
+  "usingComponents": {
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index"
+  }
+}

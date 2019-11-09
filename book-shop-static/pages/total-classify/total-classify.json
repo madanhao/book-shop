@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "全部分类",
+  "usingComponents": {
+    "shop-list": "/components/shop-list/shop-list"
+  }
+}
