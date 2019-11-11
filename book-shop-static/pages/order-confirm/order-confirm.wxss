@@ -45,6 +45,7 @@ page{
 .orders .order-item{
   display: flex;
   margin-bottom: 20rpx;
+  background-color: white;
 }
 .orders .order-item image{
   width: 150rpx;
@@ -58,6 +59,7 @@ page{
 }
 .orders .order-item .details>text:first-child{
   font-size: 28rpx;
+  margin-top: 5rpx;
 }
 .orders .order-item .details>text:nth-child(2){
   color: gray;

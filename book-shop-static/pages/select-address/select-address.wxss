@@ -13,6 +13,10 @@ scroll-view{
   background-color: white;
   margin-top: 20rpx;
 }
+.add-card{
+  display: flex;
+  align-items: center;
+}
 .addr-item icon{
   width: 30rpx;
   height: 30rpx;
